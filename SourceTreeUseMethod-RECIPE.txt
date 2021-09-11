@@ -1,0 +1,5 @@
+1.pull
+2.file refresh
+3.stage up
+4.commit 
+5.push
