@@ -1,0 +1,9 @@
+github 사용법
+
+readme - markdown 
+
+https://raw.githubusercontent.com/carpedm20/DCGAN-tensorflow/master/README.md 
+
+RAW 보고 따라하기!!
+
+누가, 왜, 필수준비물, 사용법코드 
