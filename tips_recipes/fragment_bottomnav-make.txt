@@ -1,0 +1,14 @@
+fragment 도 java 에서 우클릭 activity
+리니어 레이아웃 만들기:
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap content"
+안에있는거 기준
+orientation
+button
+0dp
+height
+weight 는 가중치, 자기가 갖는 비율.
+android id @+id/nav_button_home
+
+linearlayout 안에 linearlayout
