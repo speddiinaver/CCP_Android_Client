@@ -1,0 +1,3 @@
+java 우클릭 후 New>Activity>Empty
+이렇게 생성
+layout
