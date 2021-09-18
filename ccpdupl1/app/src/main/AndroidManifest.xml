@@ -10,6 +10,45 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ccpdupl1">
         <activity
+            android:name=".AddDailyOutfitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CalenderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SpecificSigninActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ReferenceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SigninActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MypageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SpecificStyleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SpecificCalibreActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CalibreActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddClothesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClosetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TrendsActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
