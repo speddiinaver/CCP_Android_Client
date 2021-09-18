@@ -1,9 +1,9 @@
 # CCP_Android_Client
 
 ### 👬 Author
-<a href="https://github.com/speddiinaver>speddinaver</a>
-<a href="https://github.com/JeY09>JeY09</a>
-<a href="https://github.com/BrawnyClover>BrawnyClover</a>
+<a href="https://github.com/speddiinaver">speddinaver</a>
+<a href="https://github.com/JeY09">JeY09</a>
+<a href="https://github.com/BrawnyClover">BrawnyClover</a>
 
 ### 💻 System Requirements
 * Android over Oreo
@@ -13,6 +13,7 @@
          
 ### 📱 CCP Android Client
 - 2021 CCP 프로젝트의 안드로이드 클라이언트에 대한 저장소
+- <a href="https://www.figma.com/file/wjkmX8WlrEsmNH9o4yWHQA/Calibre?node-id=0%3A1">레이아웃 Figma 바로가기</a>
 
 ### 📆 Progress
 - [x] Figma로 레이아웃 디자인
