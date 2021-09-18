@@ -4,6 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/splash_image"
     tools:context=".SplashActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:id="@+id/splash_wrapper"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="당신의 옷장에"
+            android:textColor="@color/white"
+            android:fontFamily="@font/jeju_myeongjo"
+            android:textSize="35dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/text_line_1"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="숨은 보석을"
+            android:textColor="@color/white"
+            android:fontFamily="@font/jeju_myeongjo"
+            android:textSize="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/text_line_1"
+            android:id="@+id/text_line_2"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="세상으로."
+            android:textColor="@color/white"
+            android:fontFamily="@font/jeju_myeongjo"
+            android:textSize="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/text_line_2"
+            android:id="@+id/text_line_3"
+            ></TextView>
 
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/logo"
+            android:id="@+id/splash_icon"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/splash_icon"
+            android:layout_toRightOf="@id/splash_icon"
+            android:fontFamily="@font/jeju_myeongjo"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp"
+            android:text="Calibre"></TextView>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
