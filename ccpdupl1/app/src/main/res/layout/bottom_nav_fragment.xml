@@ -24,7 +24,7 @@
                 android:background="#00000000"
                 android:padding="15dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/main_icon"
+                android:src="@drawable/logo"
                 ></ImageButton>
             <TextView
                 android:layout_width="match_parent"
