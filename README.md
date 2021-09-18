@@ -13,7 +13,7 @@
          
 ### 📱 CCP Android Client
 - 2021 CCP 프로젝트의 안드로이드 클라이언트에 대한 저장소
-- <a href="https://www.figma.com/file/wjkmX8WlrEsmNH9o4yWHQA/Calibre?node-id=0%3A1">레이아웃 Figma 바로가기</a>
+- <a href="https://www.figma.com/file/wjkmX8WlrEsmNH9o4yWHQA/Calibre?node-id=0%3A1">Figma : 레이아웃 프로젝트 바로가기</a>
 
 ### 📆 Progress
 - [x] Figma로 레이아웃 디자인
