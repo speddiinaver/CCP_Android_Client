@@ -1,9 +1,9 @@
 # CCP_Android_Client
 
 ### 👬 Author
-<a href="https://github.com/speddiinaver">speddinaver</a>
-<a href="https://github.com/JeY09">JeY09</a>
-<a href="https://github.com/BrawnyClover">BrawnyClover</a>
+* <a href="https://github.com/speddiinaver">speddinaver</a>
+* <a href="https://github.com/JeY09">JeY09</a>
+* <a href="https://github.com/BrawnyClover">BrawnyClover</a>
 
 ### 💻 System Requirements
 * Android over Oreo
