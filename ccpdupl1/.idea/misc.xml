@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitProject/CCP_Android_Client/ccpdupl1/app/src/main/res/font/font.xml" value="0.3963541666666667" />
+        <entry key="..\:/GitProject/CCP_Android_Client/ccpdupl1/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/GitProject/CCP_Android_Client/ccpdupl1/app/src/main/res/layout/activity_specific_signin.xml" value="0.36614583333333334" />
         <entry key="..\:/GitProject/CCP_Android_Client/ccpdupl1/app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="..\:/GitProject/CCP_Android_Client/ccpdupl1/app/src/main/res/layout/bottom_nav_fragment.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/ccpdupl1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14583333333333334" />
