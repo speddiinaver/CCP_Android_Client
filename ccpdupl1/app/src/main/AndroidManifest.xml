@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ccp_dupl1">
+    package="com.example.ccp_dupl1" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -8,13 +12,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:requestLegacyExternalStorage="true">
         <activity
-            android:name=".AddDailyOutfitActivity"
-            android:exported="true" />
-        <activity
-            android:name=".CalenderActivity"
-            android:exported="true" />
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".SplashActivity"
             android:exported="true" >
@@ -24,40 +28,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SpecificSigninActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ReferenceActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SigninActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MypageActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SpecificStyleActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SpecificCalibreActivity"
-            android:exported="true" />
-        <activity
-            android:name=".CalibreActivity"
-            android:exported="true" />
-        <activity
-            android:name=".AddClothesActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ClosetActivity"
-            android:exported="true" />
-        <activity
-            android:name=".TrendsActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-        </activity>
     </application>
-
 </manifest>

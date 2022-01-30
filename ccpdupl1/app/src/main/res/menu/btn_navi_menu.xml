@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_home"
+        android:enabled="true"
+        android:icon="@drawable/logo_small_black"
+        android:title="Main"
+        ></item>
+    <item
+        android:id="@+id/tab_trend"
+        android:enabled="true"
+        android:icon="@drawable/trend_icon"
+        android:title="Trend"
+        ></item>
+    <item
+        android:id="@+id/tab_closet"
+        android:enabled="true"
+        android:icon="@drawable/closet_icon"
+        android:title="Closet"
+        ></item>
+    <item
+        android:id="@+id/tab_calibre"
+        android:enabled="true"
+        android:icon="@drawable/calibre_icon"
+        android:title="Calibre"
+        ></item>
+    <item
+        android:id="@+id/tab_mypage"
+        android:enabled="true"
+        android:icon="@drawable/my_icon"
+        android:title="My Page"
+        ></item>
+</menu>
