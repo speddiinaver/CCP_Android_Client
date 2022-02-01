@@ -3,7 +3,7 @@
     <item
         android:id="@+id/tab_home"
         android:enabled="true"
-        android:icon="@drawable/logo_small_black"
+        android:icon="@drawable/main_icon"
         android:title="Main"
         ></item>
     <item

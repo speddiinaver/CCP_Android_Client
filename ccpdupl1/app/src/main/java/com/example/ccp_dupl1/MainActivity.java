@@ -1,24 +1,16 @@
 package com.example.ccp_dupl1;
 
+import android.content.pm.ActivityInfo;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
-import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.GridView;
 import android.widget.LinearLayout;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         init();
         SettingListener();
         bottomNavigationView.setSelectedItemId(R.id.tab_home);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
     }
 
     private void init()
@@ -48,6 +42,26 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new TabSelectedListener());
     }
 
+    public void onFragmentChange(int fragmentNum, Object args) {
+        switch (fragmentNum) {
+            case AppConstants.CALIBRE_BACK_BUTTON_CLICKED: {
+                CalibreFragment CalibreFragment = new CalibreFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_current_page, CalibreFragment).commit();
+                break;
+            }
+            case AppConstants.CALIBRE_SPECIFIC_BUTTON_CLICKED:
+            case AppConstants.CALIBRE_STYLE_SPECIFIC_BACK_BUTTON_CLICKED: {
+                CalibreSimilarImagesFragment similarImagesFragment = new CalibreSimilarImagesFragment((int)args);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_current_page, similarImagesFragment).commit();
+                break;
+            }
+            case AppConstants.CALIBRE_RELATED_IMAGE_CLICKED: {
+                CalibreStyleSpecificInfoFragment specificInfoFragment = new CalibreStyleSpecificInfoFragment((Bitmap)args);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_current_page, specificInfoFragment).commit();
+                break;
+            }
+        }
+    }
 
 //    @Override
 //    public void onWindowFocusChanged(boolean hasFocus) {

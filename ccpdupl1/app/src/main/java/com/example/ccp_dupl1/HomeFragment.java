@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -95,7 +96,7 @@ public class HomeFragment extends Fragment {
         eventAdapter.addItem(new MonthlyEventItem("설", "#누가_나_대신"));
         eventAdapter.addItem(new MonthlyEventItem("설 다음날", "#다_만들어주면_좋겠따"));
         monthlyEventList.setAdapter(eventAdapter);
-        monthlyEventList.setDividerHeight(getListViewHeight(monthlyEventList)/(1+eventAdapter.getCount()));
+        monthlyEventList.setDividerHeight(getListViewHeight(monthlyEventList)/(eventAdapter.getCount()));
 
         ArrayList<String> images = new ArrayList<String>();
         images.add("/storage/emulated/0/DCIM/test1.jpg");
@@ -104,7 +105,7 @@ public class HomeFragment extends Fragment {
 
         dailyOutfitGrid = (RecyclerView) rootView.findViewById(R.id.grid_daily_outfit);
         RecyclerViewAdapter gridViewAdapter = new RecyclerViewAdapter(getActivity(), images);
-        dailyOutfitGrid.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
+        dailyOutfitGrid.setLayoutManager(new GridLayoutManager(getActivity(), 3));
         dailyOutfitGrid.setAdapter(gridViewAdapter);
 
         return rootView;

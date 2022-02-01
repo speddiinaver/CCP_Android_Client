@@ -3,12 +3,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TrendFragment">
+    tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="20dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/edit_text_search_hashtag"
+                android:background="@drawable/edit_text_theme"
+                android:textColor="@color/black"
+                android:textColorHint="#898989"
+                android:hint="해시태그, 스타일 검색"
+                android:drawableStart="@drawable/outline_search_black_24"
+                android:drawablePadding="20dp"
+                android:paddingLeft="20dp"
+                android:fontFamily="@font/jeju_myeongjo"
+                android:textAlignment="viewStart"
+                ></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:paddingLeft="20dp"
+            android:paddingVertical="10dp"
+            >
+
+            <GridView
+                android:id="@+id/grid_trend_images"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:gravity="center"
+                android:verticalSpacing="10dp"></GridView>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>

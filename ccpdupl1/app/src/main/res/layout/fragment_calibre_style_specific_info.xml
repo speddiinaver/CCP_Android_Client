@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/region_app_title"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:paddingLeft="30dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:src="@drawable/baseline_arrow_back_black_24"
+                android:id ="@+id/button_to_similar"
+                ></ImageButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11"
+            android:orientation="vertical"
+            android:id="@+id/region_today_recom"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="match_parent"
+                    android:text="Style Specific"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/jeju_myeongjo"
+                    android:textSize="15dp"
+                    android:paddingLeft="30dp"
+                    android:id="@+id/text_similar_index"
+
+                    ></TextView>
+            </LinearLayout>
+
+
+            <ImageView
+                android:background="@color/white"
+                android:id="@+id/image_selcted_specific"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                >
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="match_parent"
+                    android:text="Style Images"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/jeju_myeongjo"
+                    android:textSize="15dp"
+                    android:paddingLeft="30dp"
+
+                    ></TextView>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/white"
+                android:id="@+id/grid_style_specific"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
